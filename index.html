@@ -6,22 +6,25 @@
     <title>ToDoList</title>
     <script src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- GOOGLE FONTS IMPORT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>To Do List</h1>
+<body class="padre">
+    <h1 id="main_head">To Do List</h1>
+    <H2 id="subtitle">Please add task what you will acomplish during this day ,  when it's done click the "Completed" Button to delete it from the list.</H2>
     <section id="spawn">
-        <div id="ToDo">
+       <div id="ToDo">
 
-        </div>
+       </div>
     </section>
     <div class="input">
-        <Input id="input_box1" placeholder="Task"></Input>
-        <button onclick="get_task()" id="add_button">Add Task</button>
+        <Input id="input_box1" placeholder="Insert Your Task Here"></Input>
+        <button onclick="get_task()" id="add_button">ADD TASK</button>
     </div>
     <footer class="foot">
-        <p>All rights reserved</p>
-        <p>ADRIANH@2025
-        </p>
+        
     </footer>
 </body>
 </html>

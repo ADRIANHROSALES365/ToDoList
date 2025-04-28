@@ -15,21 +15,19 @@ function get_task(){
     }
 }
 
-function spawn_task(task){
+function spawn_task(task){  
     let task_object=document.createElement('p');
     task_object.setAttribute('id','p,'+general_id);
     let button_delete_task=document.createElement('Button');
     button_delete_task.innerHTML='Completed';
+    button_delete_task.onclick=function(){task_object.remove(); button_delete_task.remove();}
     button_delete_task.setAttribute('class','delete_button');
     button_delete_task.setAttribute('id','delete_button,'+general_id);
-    button_delete_task.setAttribute('onClick','delete_task(),'+general_id);
     general_id+=1;
     task_object.textContent=task;
     console.log(general_id);
-    document.getElementById('ToDo').appendChild(task_object);
-    document.getElementById('ToDo').appendChild(button_delete_task);
+    document.getElementById('ToDo').appendChild(task_object).appendChild(button_delete_task);
+    
 }
 
-function delete_task(){
 
-}

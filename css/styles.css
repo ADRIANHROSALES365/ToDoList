@@ -1,8 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-color: #4FB286;
+    color: #546D64;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #main_head{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  #subtitle{
+    margin-bottom: 20px;
+  }
+
 .delete_button{
-    font-size: 10px;
-    color: black;
+    font-size: 15px;
+    border: solid 1px;
+    color: #50FFB1;
     font-weight:bold;
+    margin-top: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+
+.delete_button:hover{
+    cursor: pointer;
+}
+
+#main_head{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#spawn{
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    border: 2px;
+    border: solid;
+    color: #50FFB1;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padre_horizontal{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#ToDo{
+margin: 0 auto;
+}
+
+
+#input_box1{
+    background-color: #50FFB1;
+    border-color: 50FFB1;
+    border: 2px solid;
+    text-align: center;
+    margin-right: 20px;
+    color: #546D64;
+    border-radius: 2px;
+    height: 25px;
+    width: 300px;
+}
+
+#add_button{
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #50FFB1;
+    border: solid 2px;
+    height: 30px;
+}
+
+#add_button:hover{
+    cursor: pointer;
 }
